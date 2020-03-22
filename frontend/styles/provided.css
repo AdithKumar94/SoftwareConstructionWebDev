@@ -1,0 +1,179 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+.post {
+    max-width: 640px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-title {
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    background-color: #e6ffe6;
+}
+
+.post-thumb {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid snow;
+}
+
+.post-image {
+    width: 640px;
+    height: 640px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .post {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        border-top: 1px solid rgba(0,0,0,.0975);
+        max-height: 60vh;
+    }
+
+    .post-image {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #feed > * {
+        flex: 1 1 45%;
+        height: auto;
+    }
+}
+
+
+.transbox {
+    margin: 25px 50px 75px 100px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+img {
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 5px;
+    width: 1024px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 5px;
+    width: 50%;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+#pageLike {
+    width: 20px;
+    float:left;
+    margin-right:5px;
+}
+/* Add your styles here */
+#comments-field1{
+    font-family: "Lucida Calligraphy,Comic Sans MS,Lucida Console";
+    font-size: medium;
+    font-weight: bold
+    display:inline;
+    margin: 0;
+    list-style: none;
+}
+
+
+#comments-field3{
+    font-family: "Lucida Calligraphy,Comic Sans MS,Lucida Console";
+    font-size: small;
+    display:inline;
+    margin: 0;
+    list-style: none;
+}
+
+
+#program-start {
+    width: 200px;
+    height: 400px;
+}
+
+.AppName {
+font-family: 'Brush Script MT',cursive;
+}
+
+.Logo {
+font-family: 'Lucida Handwriting',cursive;
+}
+
+#Logout {
+position:fixed; top:2%; right:2%;
+}
+
+.userIN {
+  margin-bottom: 5px;
+  width: 100%;
+  
+  border: 1px solid #dbdbdb;
+
+}
+

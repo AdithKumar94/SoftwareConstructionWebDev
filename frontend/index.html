@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title style="font-family: 'Brush Script MT',cursive">Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body id="program start" >
+<!-- This is an example app structure -->
+<button id = "Logout" style="float: right;">Logout</button>
+<header class='banner' id = "base model">
+
+    <h1 class = "AppName" >Instacram</h1>
+    <h2 class = "Logo" >Bringing Social Life Closer to you</h2>
+    <ul class='nav' class>
+        <div id = "data input" class="transbox">
+            <ul>
+                <li><input type="text" class="username_login" data-type="text" name="username_login" aria-required="true" placeholder="username" aria-label="username" id="user_login" /></li>
+                <li><input type="password" class="password_login" data-type="text" name="password_login" aria-required="true" placeholder="password" aria-label="password" id="pass_login" /></li>
+                <button id = "Login">Login</button>
+            </ul>
+
+            <ul>
+                <li><h4 style="font-family: 'Lucida Handwriting'cursive">New to Instacram</h4></li>
+                <li><input type="text" class="name_Register" data-type="text" name="name_Register" aria-required="true" placeholder="name" aria-label="name" id="name_Register" /></li>
+                <li><input type="text" class="email_Register" data-type="text" name="email_Register" aria-required="true" placeholder="email" aria-label="email" id="email_Register" /></li>
+                <li><input type="text" class="username_Register" data-type="text" name="username_Register" aria-required="true" placeholder="username" aria-label="username" id="user_Register" /></li>
+                <li><input type="password" class="password_Register" data-type="text" name="password_Register" aria-required="true" placeholder="password" aria-label="password" id="password_Register" /></li>
+                <button id = "Register">Register</button>
+            </ul>
+        </div>
+    </ul>
+</header>
+<main role='main'>
+    <!-- app goes here -->
+    <div id='large-feed'>
+        <!-- inject feed data -->
+    </div>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
+
